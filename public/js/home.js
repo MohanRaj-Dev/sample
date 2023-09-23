@@ -19,3 +19,10 @@ const createBlog = (blog) => {
     </div>
     `;
 }
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".links-container");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
